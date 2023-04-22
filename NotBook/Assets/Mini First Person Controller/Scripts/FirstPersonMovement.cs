@@ -51,18 +51,19 @@ public class FirstPersonMovement : MonoBehaviour
             }
             else
             {
-                acceleration -= 0.1f;
+                if (acceleration + speed > 0)
+                    acceleration -= 0.1f;
                 targetMovingSpeed = speed + acceleration;
             }
         }
         else
         {
-                if (acceleration + speed > 0)
-                {
-                    acceleration -= 0.1f;
-                }
+            if (acceleration + speed > 0)
+            {
+                acceleration -= 0.1f;
+            }
                 
-                targetMovingSpeed = speed + acceleration;
+            targetMovingSpeed = speed + acceleration;
         }
         Vector2 targetVelocity =new Vector2( Input.GetAxis("Horizontal") * targetMovingSpeed, 1 * targetMovingSpeed);
         
