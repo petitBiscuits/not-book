@@ -1042,6 +1042,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 48.23
       objectReference: {fileID: 0}
+    - target: {fileID: 3619566151139866327, guid: e83379b99fea6e44098d134597401f88,
+        type: 3}
+      propertyPath: _infoWallMaterials.Array.data[16].Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b0f9849f1a0d8546ac9930dce16ec93, type: 2}
+    - target: {fileID: 3619566151139866327, guid: e83379b99fea6e44098d134597401f88,
+        type: 3}
+      propertyPath: _infoWallMaterials.Array.data[17].Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b0f9849f1a0d8546ac9930dce16ec93, type: 2}
+    - target: {fileID: 3619566151139866327, guid: e83379b99fea6e44098d134597401f88,
+        type: 3}
+      propertyPath: _infoWallMaterials.Array.data[16].NombreTexture
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619566151139866327, guid: e83379b99fea6e44098d134597401f88,
+        type: 3}
+      propertyPath: _infoWallMaterials.Array.data[17].NombreTexture
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3721094499485027373, guid: e83379b99fea6e44098d134597401f88,
         type: 3}
       propertyPath: m_LocalPosition.x
