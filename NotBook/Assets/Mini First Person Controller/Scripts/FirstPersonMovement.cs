@@ -5,14 +5,18 @@ using UnityEngine.InputSystem;
 
 public class FirstPersonMovement : MonoBehaviour
 {
-    public float speed = 29;
+    public float speed = 10;
+    public float maxSpeed = 13;
+    
     public float acceleration = 0.1f;
-    Vector2 targetVelocity = new Vector2();
+    public float accelerationSpeed = 0.01f;
+    
 
     [Header("Running")]
     public bool canRun = false;
     public bool IsRunning { get; private set; }
     public float runSpeed = 19;
+    
     public KeyCode runningKey = KeyCode.LeftShift;
 
     Rigidbody rigidbody;
@@ -46,13 +50,16 @@ public class FirstPersonMovement : MonoBehaviour
         {
             if (!Keyboard.current.ctrlKey.isPressed)
             {
-                acceleration += 0.1f;
+                if (maxSpeed > speed + acceleration)
+                {
+                    acceleration += accelerationSpeed;
+                }
                 targetMovingSpeed = speed + acceleration;
             }
             else
             {
                 if (acceleration + speed > 0)
-                    acceleration -= 0.1f;
+                    acceleration -= accelerationSpeed;
                 targetMovingSpeed = speed + acceleration;
             }
         }
@@ -60,7 +67,7 @@ public class FirstPersonMovement : MonoBehaviour
         {
             if (acceleration + speed > 0)
             {
-                acceleration -= 0.1f;
+                acceleration -= accelerationSpeed;
             }
                 
             targetMovingSpeed = speed + acceleration;
