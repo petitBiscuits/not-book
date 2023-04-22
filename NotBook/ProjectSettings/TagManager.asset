@@ -9,6 +9,7 @@ TagManager:
   - PostIt
   - Wall
   - Booster
+  - Target
   layers:
   - Default
   - TransparentFX
