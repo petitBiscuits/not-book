@@ -8,6 +8,7 @@ TagManager:
   - Chest
   - PostIt
   - Wall
+  - Booster
   layers:
   - Default
   - TransparentFX
