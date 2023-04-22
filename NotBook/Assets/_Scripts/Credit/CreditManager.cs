@@ -9,15 +9,18 @@ public class CreditManager : MonoBehaviour
     public KeyCode resetKey = KeyCode.Space;
     public float resetHoldTime = 2f;
     public Text resetText;
+    public float timerDuration = 10f;
 
     private Vector3 initialPosition;
     private float keyHoldTimer = 0f;
     private int dotCount = 0;
+    private Coroutine timerCoroutine;
 
     void Start()
     {
         initialPosition = transform.position;
         resetText.text = "Espace (Continuer)";
+        timerCoroutine = StartCoroutine(TimerRoutine());
     }
 
     void Update()
@@ -40,6 +43,11 @@ public class CreditManager : MonoBehaviour
                 keyHoldTimer = 0f;
                 dotCount = 0;
                 resetText.text = "Espace (Continuer)";
+                if (timerCoroutine != null)
+                {
+                    StopCoroutine(timerCoroutine);
+                }
+                timerCoroutine = StartCoroutine(TimerRoutine());
             }
         }
         else
@@ -48,5 +56,16 @@ public class CreditManager : MonoBehaviour
             dotCount = 0;
             resetText.text = "Espace (Continuer)";
         }
+    }
+
+    IEnumerator TimerRoutine()
+    {
+        float timer = timerDuration;
+        while (timer > 0)
+        {
+            timer -= Time.deltaTime;
+            yield return null;
+        }
+        // scène suivante
     }
 }
