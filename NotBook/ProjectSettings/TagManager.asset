@@ -4,13 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
   - Gate
   - Chest
   - PostIt
-=======
   - Wall
->>>>>>> 18867a1139616790dd9d802f8d79b51569ffd215
   layers:
   - Default
   - TransparentFX
