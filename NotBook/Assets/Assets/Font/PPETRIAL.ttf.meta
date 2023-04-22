@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 21b0b41fb6b49af418d7adffd91864fe
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - pencilPete FONT
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: fb5a33f5a6359c04d861f7e2e9b937bd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
