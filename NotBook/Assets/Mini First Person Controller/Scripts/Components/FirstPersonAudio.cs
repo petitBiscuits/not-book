@@ -71,11 +71,7 @@ public class FirstPersonAudio : MonoBehaviour
             if (crouch && crouch.IsCrouched)
             {
                 SetPlayingMovingAudio(crouchedAudio);
-            }
-            else if (character.IsRunning)
-            {
-                SetPlayingMovingAudio(runningAudio);
-            }
+            }   
             else
             {
                 SetPlayingMovingAudio(stepAudio);

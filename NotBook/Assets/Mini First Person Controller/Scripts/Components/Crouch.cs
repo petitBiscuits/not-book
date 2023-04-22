@@ -16,7 +16,7 @@ public class Crouch : MonoBehaviour
     public Transform headToLower;
     [HideInInspector]
     public float? defaultHeadYLocalPosition;
-    public float crouchYHeadPosition = 0.1f;
+    public float crouchYHeadPosition = 0.1f ;
 
 
 

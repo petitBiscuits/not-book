@@ -10,14 +10,6 @@ public class FirstPersonMovement : MonoBehaviour
     
     public float acceleration = 0.1f;
     public float accelerationSpeed = 0.01f;
-    
-
-    [Header("Running")]
-    public bool canRun = false;
-    public bool IsRunning { get; private set; }
-    public float runSpeed = 19;
-    
-    public KeyCode runningKey = KeyCode.LeftShift;
 
     Rigidbody rigidbody;
     /// <summary> Functions to override movement speed. Will use the last added override. </summary>
@@ -35,11 +27,8 @@ public class FirstPersonMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Update IsRunning from input.
-        IsRunning = canRun && Input.GetKey(runningKey);
-
         // Get targetMovingSpeed.
-        float targetMovingSpeed = IsRunning ? runSpeed : speed;
+        float targetMovingSpeed = speed;
         if (speedOverrides.Count > 0)
         {
             targetMovingSpeed = speedOverrides[speedOverrides.Count - 1]();
@@ -58,7 +47,7 @@ public class FirstPersonMovement : MonoBehaviour
             }
             else
             {
-                if (acceleration + speed > 0)
+                if (0 < acceleration + speed)
                     acceleration -= accelerationSpeed;
                 targetMovingSpeed = speed + acceleration;
             }
