@@ -187,7 +187,6 @@ GameObject:
   - component: {fileID: 4595461743035448236}
   - component: {fileID: 13953669851391011}
   - component: {fileID: 7582634227789907369}
-  - component: {fileID: 2148849621625585251}
   - component: {fileID: 1663945505019660024}
   m_Layer: 0
   m_Name: Player
@@ -295,24 +294,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpStrength: 2
   groundCheck: {fileID: 510608045809542943}
---- !u!114 &2148849621625585251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2568635309639092725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27b67ddb3d23b8340b125aede56d7e8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: 306
-  movement: {fileID: 13953669851391011}
-  movementSpeed: 2
-  headToLower: {fileID: 4251732538022257547}
-  crouchYHeadPosition: 1
-  colliderToLower: {fileID: 7271999975911514920}
 --- !u!114 &1663945505019660024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,7 +319,6 @@ GameObject:
   - component: {fileID: 2463960108669017819}
   - component: {fileID: 6750119215456492503}
   - component: {fileID: 6648879854108274081}
-  - component: {fileID: 7255776198867983867}
   - component: {fileID: 7182866222502204783}
   - component: {fileID: 489535043323252164}
   m_Layer: 0
@@ -445,22 +425,6 @@ MonoBehaviour:
   character: {fileID: 1878869272951701434}
   sensitivity: 2
   smoothing: 1.5
---- !u!114 &7255776198867983867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3184662596276627226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780f90e951d635f439326ea715cd97e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultFOV: 60
-  maxZoomFOV: 15
-  currentZoom: 0
-  sensitivity: 1
 --- !u!114 &7182866222502204783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,7 +546,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3888a1e1c52793144a6d07b8c508772e, type: 3}
   - {fileID: 8300000, guid: 5b26cf3cd5f6b914a80e6d3476caaf86, type: 3}
   - {fileID: 8300000, guid: b16dc74b7376aca46bd0c6be96c940fa, type: 3}
-  crouch: {fileID: 2148849621625585251}
+  crouch: {fileID: 0}
   crouchStartAudio: {fileID: 5232969491888342082}
   crouchedAudio: {fileID: 7500206139167717761}
   crouchEndAudio: {fileID: 2404495474269980986}
