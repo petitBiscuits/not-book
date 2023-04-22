@@ -22,9 +22,8 @@ public class RayCast : MonoBehaviour
         Ray theRay = new Ray(transform.position, transform.TransformDirection(direction * range));
         Debug.DrawRay(transform.position, transform.TransformDirection(direction * range));
 
-        if (Keyboard.current.wKey.isPressed)
+        if (Keyboard.current.fKey.isPressed)
         {
-            Debug.Log("QQQ");
             if(Physics.Raycast(theRay, out RaycastHit hit, range))
             {
                 if(hit.collider.tag == "Chest")

@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="Header" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0.26); justify-content: space-around; align-items: center; padding-left: 15%; padding-right: 15%; flex-basis: 10%; padding-top: 0.5%; margin-top: 0; flex-direction: row;">
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="TimerLabel" style="background-color: rgba(255, 0, 0, 0); color: rgb(255, 0, 0); font-size: 30px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Footer" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0.16); align-items: center; justify-content: space-around; flex-direction: row; -unity-text-align: upper-left; align-self: auto; flex-basis: 20%;" />
+    </ui:VisualElement>
+</ui:UXML>

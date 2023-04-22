@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Gate
   - Chest
+  - PostIt
   layers:
   - Default
   - TransparentFX
