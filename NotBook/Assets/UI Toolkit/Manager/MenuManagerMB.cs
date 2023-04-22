@@ -32,7 +32,7 @@ public class MenuManagerMB : MonoBehaviour
 
     private void OnStartClicked()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("HistoireScene");
     }
 
     private void OnQuitClicked()

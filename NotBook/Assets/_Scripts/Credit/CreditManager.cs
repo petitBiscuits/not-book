@@ -1,19 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CreditManager : MonoBehaviour
 {
     public float scrollSpeed = 50f;
     public float timerDuration = 10f;
 
+    [SerializeField]
+    private string _sceneName;
+
     private Vector3 initialPosition;
-    private Coroutine timerCoroutine;
 
     void Start()
     {
         initialPosition = transform.position;
-        timerCoroutine = StartCoroutine(TimerRoutine());
+        StartCoroutine(TimerRoutine());
     }
 
     void Update()
@@ -25,6 +28,6 @@ public class CreditManager : MonoBehaviour
     {
         float timer = timerDuration;        
         yield return new WaitForSeconds(timerDuration);
-        // scène suivante
+        SceneManager.LoadScene(_sceneName);
     }
 }
