@@ -516,7 +516,7 @@ Canvas:
   m_GameObject: {fileID: 826017524}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -670,6 +670,7 @@ MonoBehaviour:
   resetKey: 32
   resetHoldTime: 7
   resetText: {fileID: 1418576381}
+  timerDuration: 25
 --- !u!1 &1418576379
 GameObject:
   m_ObjectHideFlags: 0
