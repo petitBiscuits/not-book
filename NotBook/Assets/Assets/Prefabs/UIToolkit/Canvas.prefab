@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -67,8 +67,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 21b0b41fb6b49af418d7adffd91864fe, type: 3}
-    m_FontSize: 25
+    m_Font: {fileID: 12800000, guid: 1062c701058745940ae5dca6219c64c8, type: 3}
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -79,42 +79,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "CREDITS\n--------\n\n\n\nNot Book\n--------\nUPsi Jam\r\n#planning\r\n\r\nPlanning
-    \xE9dition 3.0 (21-23 avril 2023)\r\n\r\nRendez-vous en Suisse, \xE0 Neuch\xE2tel,
-    dans les locaux de la HE-Arc au 3\xE8me \xE9tage, salle 328.\r\n--> lien Google
-    Maps : https://goo.gl/maps/g2qSksKh8Xrpbifh6\r\n\r\n\r\nVendredi\r\n----------\r\n\r\n17h00
-    : Accueil + distribution des pins exclusif de cette \xE9dition + distribution
-    des bracelets d\u2019acc\xE8s au b\xE2timent\r\n17h30 : Introduction (d\xE9roulement
-    g\xE9n\xE9ral et diverses informations importantes)\r\n18h00 : R\xE9v\xE9lation
-    du th\xE8me, tu as ensuite 42h pour cr\xE9er un jeu vid\xE9o\r\n18h30 : Ap\xE9ro
-    pr\xE9par\xE9 et offert afin d\u2019apprendre un peu \xE0 se conna\xEEtre et
-    de permettre \xE0 tout le monde de discuter du th\xE8me, des id\xE9es, etc.\r\n\r\n\r\nSamedi\r\n----------\r\n\r\nGame
-    Jam toute la journ\xE9e !!!\r\n \r\n\r\nDimanche\r\n----------\r\n\r\n12h00 :
-    Fin de la Game Jam + Pause de midi bien m\xE9rit\xE9e\r\n13h30 : Pr\xE9sentation
-    des jeux par les participants (optionnel)\r\n14h30 : Test des jeux par les participants\r\n16h30
-    : Les tests et les votes sont termin\xE9s\r\n17h00 : Remise des prix\r\n17h30
-    : Fin (rangement avec les personnes souhaitant aider)\r\n\r\n\r\nNOTE IMPORTANTE\r\nIl
-    est difficile d\u2019estimer parfaitement la dur\xE9e d\u2019un \xE9v\xE9nement
-    comme celui-ci. Afin de garantir la bonne conduite de l\u2019\xE9v\xE9nement,
-    pr\xE9vois de rester jusqu\u2019\xE0 18h sur place.\r\n\r\n#get-ready\r\n\r\nSe
-    pr\xE9parer pour la Game Jam\r\n--------------------\r\n\r\nTu n'auras que 42h
-    pour cr\xE9er un jeu vid\xE9o, c\u2019est tr\xE8s peu, tu pourrais \xEAtre surpris
-    ^^\r\nAvant le d\xE9but de la Jam, il est donc vivement conseill\xE9 de t\xE9l\xE9charger
-    et mettre \xE0 jour les logiciels dont tu auras besoin.\r\n \r\nVoici une liste
-    non exhaustive des logiciels qu\u2019il te faudra.\r\nLibre \xE0 toi d\u2019en
-    installer d\u2019autres ou de ne pas en installer certain, cela d\xE9pendra de
-    tes besoins :\r\n1. Moteur de jeu : Unity ou Unreal Engine \r\n2. \xC9diteur
-    de texte : Visual Studio\r\n3. 3D : Blender\r\n4. 2D : Paint.net ou Gimp\r\n5.
-    Audio : Bosca Ceoil + Audacity\r\n6. Gestion des t\xE2ches : Trello (site web,
-    rien \xE0 t\xE9l\xE9charger)\r\n7. Chat : Discord\r\n8. Source control : Github\r\n9.
-    Notes + Maquettes : Papier + crayon\r\n \r\nS\u2019il s\u2019agit de ta premi\xE8re
-    Game Jam, je te conseille d\u2019avoir au moins les logiciels suivants install\xE9s,
-    mis \xE0 jour et pr\xEAt : Unity, Visual Studio et Paint.net (ou Gimp)\r\n\r\nSi
-    tu n'as jamais ou tr\xE8s peu toucher \xE0 Unity, je vous conseille de t'entrainer
-    un peu avant l'\xE9v\xE9nement pour \xE9viter d'\xEAtre perdu.\r\nIl y a plein
-    de ressource en libre acc\xE8s directement \xE0 ta port\xE9 sur Internet, Youtube,
-    Formus, etc. Tu peux aussi demander conseil ou de l'aide dans \u2060\U0001F4ACdiscussion
-    \U0001F642 \r\n"
+  m_Text: "Merci d'avoir jou\xE9 !\n\n\n\n\n\nCREDITS\n----------\n\n\n\nNot's Book\n----------\n\n\n\n\n\n\nD\xE9veloppeurs
+    :\n\n - Lo\xEFc\n\n - Valentino \n\n - Morgan\n\nGraphiste :\n\n - Fr\xE9d\xE9ric\n\nDesign
+    de niveau :\n\n - Kilian \n\n\nUPsi Jam 3.0\n\n\n\n\n\nFIN"
 --- !u!1 &272549095365095169
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollSpeed: 100
   timerDuration: 20
+  _sceneName: 
 --- !u!1 &871562210031891533
 GameObject:
   m_ObjectHideFlags: 0
@@ -241,7 +209,7 @@ RectTransform:
   - {fileID: 137261047015400624}
   - {fileID: 2979451761359734303}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -370,7 +338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.509434, g: 0.060089808, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

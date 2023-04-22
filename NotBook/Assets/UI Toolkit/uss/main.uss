@@ -17,7 +17,7 @@
 
 .quit:hover {
     background-image: none;
-    cursor: url('project://database/Assets/Assets/Paper/curseur_triste.png?fileID=2800000&guid=1789bb37b0d3b344190208e99a5485a1&type=3#curseur_triste');
+    cursor: url('project://database/Assets/Assets/Paper/curseur_triste.png?fileID=2800000&guid=60cf26f90a900504195cc4c1d222d2f4&type=3#curseur_triste');
     -unity-background-image-tint-color: rgb(0, 107, 145);
     font-size: 60px;
 }
