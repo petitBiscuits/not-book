@@ -14,13 +14,9 @@ public class Timer : MonoBehaviour
 
     public bool StartTimer { get; set; }
 
-    public event Action<string> TimerChange;
-    public void OnTimerChange(string s) => TimerChange.Invoke(s);
-
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        if(Instance == null)
+        if (Instance == null)
         {
             Instance = this;
         }
@@ -28,6 +24,11 @@ public class Timer : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
         StartCoroutine(CountdownToStart());
     }
 
@@ -37,7 +38,7 @@ public class Timer : MonoBehaviour
         if (StartTimer)
         {
             currentTime += Time.deltaTime;
-            OnTimerChange(currentTime.ToString("0.000"));
+            EventManager.OnTimerChange(currentTime.ToString("0.0"));
         }
     }
 
@@ -51,6 +52,6 @@ public class Timer : MonoBehaviour
 
         // GO !
         this.StartTimer = true;
-        GameController.instance.StartGame();
+        GameController.Instance.StartGame();
     }
 }

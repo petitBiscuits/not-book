@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 
@@ -8,7 +10,7 @@ public class FirstPersonMovement : MonoBehaviour
     public float speed = 10;
     public float maxSpeed = 13;
     
-    public float acceleration = 0.1f;
+    public float acceleration = 0f;
     public float accelerationSpeed = 0.01f;
 
     Rigidbody rigidbody;
@@ -28,14 +30,14 @@ public class FirstPersonMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Get targetMovingSpeed.
-        float targetMovingSpeed = speed;
+        float targetMovingSpeed = GameController.Instance.isGameStarted ? speed : 0;
         if (speedOverrides.Count > 0)
         {
             targetMovingSpeed = speedOverrides[speedOverrides.Count - 1]();
         }
 
         // Get targetVelocity from input.
-        if (Keyboard.current.wKey.isPressed)
+        if (Keyboard.current.wKey.isPressed && GameController.Instance.isGameStarted)
         {
             if (!Keyboard.current.ctrlKey.isPressed)
             {
@@ -66,5 +68,6 @@ public class FirstPersonMovement : MonoBehaviour
 
         // Apply movement.
         rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
+        EventManager.OnSpeedChange(rigidbody.velocity.magnitude);
     }
 }
