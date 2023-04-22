@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Crouch : MonoBehaviour
 {
@@ -16,7 +17,9 @@ public class Crouch : MonoBehaviour
     [HideInInspector]
     public float? defaultHeadYLocalPosition;
     public float crouchYHeadPosition = 1;
-    
+
+
+
     [Tooltip("Collider to lower when crouched.")]
     public CapsuleCollider colliderToLower;
     [HideInInspector]
@@ -24,6 +27,8 @@ public class Crouch : MonoBehaviour
 
     public bool IsCrouched { get; private set; }
     public event System.Action CrouchStart, CrouchEnd;
+    
+    
 
 
     void Reset()
@@ -38,6 +43,7 @@ public class Crouch : MonoBehaviour
     {
         if (Input.GetKey(key))
         {
+            movementSpeed = FirstPersonMovement.Instance.speed + FirstPersonMovement.Instance.acceleration;
             // Enforce a low head.
             if (headToLower)
             {
