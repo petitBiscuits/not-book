@@ -12,6 +12,7 @@ TagManager:
   - Target
   - mort
   - end
+  - dogo
   layers:
   - Default
   - TransparentFX
