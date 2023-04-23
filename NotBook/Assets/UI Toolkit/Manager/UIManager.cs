@@ -52,7 +52,6 @@ public class UIManager : MonoBehaviour
         _lblCountDown.text = timer.ToString("0");
         if(timer == 0)
         {
-            Debug.Log("Hide CountDown");
             _countDown.style.display = DisplayStyle.None;
             _UI.style.display = DisplayStyle.Flex;
         }
