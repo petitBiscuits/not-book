@@ -249,12 +249,22 @@ PrefabInstance:
     - target: {fileID: 4850875614052601957, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
       propertyPath: scrollSpeed
-      value: 70
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850875614052601957, guid: d3de066f83bba1242a3374cf7e86c273,
+        type: 3}
+      propertyPath: timerDuration
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6648295786301486138, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0.000061035156
+      value: -459.9053
+      objectReference: {fileID: 0}
+    - target: {fileID: 6648295786301486138, guid: d3de066f83bba1242a3374cf7e86c273,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1019.688
       objectReference: {fileID: 0}
     - target: {fileID: 6648295786301486138, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
@@ -266,14 +276,19 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6648295786301486138, guid: d3de066f83bba1242a3374cf7e86c273,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1301
+      objectReference: {fileID: 0}
     - target: {fileID: 6994123548745125580, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
       propertyPath: m_Text
-      value: "Not \xE9tait plong\xE9 dans son cahier, \xE9crivant sans rel\xE2che,
-        quand quelque chose de bizarre s'est produit. Il a commenc\xE9 \xE0 se sentir
-        aspir\xE9 dans les pages de son livre. Avant qu'il ne puisse comprendre ce
-        qui se passait, Not s'est retrouv\xE9 pi\xE9g\xE9 \xE0 l'int\xE9rieur de
-        son propre livre.\r\n\r\nIl \xE9tait maintenant dans un monde diff\xE9rent,
+      value: "La vie de Not :\n\nNot \xE9tait plong\xE9 dans son cahier, \xE9crivant
+        sans rel\xE2che, quand quelque chose de bizarre s'est produit. Il a commenc\xE9
+        \xE0 se sentir aspir\xE9 dans les pages de son livre. Avant qu'il ne puisse
+        comprendre ce qui se passait, Not s'est retrouv\xE9 pi\xE9g\xE9 \xE0 l'int\xE9rieur
+        de son propre livre.\r\n\r\nIl \xE9tait maintenant dans un monde diff\xE9rent,
         un monde qu'il avait lui-m\xEAme cr\xE9\xE9 dans son livre. Mais quelque
         chose n'allait pas. Les personnages qu'il avait invent\xE9s avaient pris
         vie, mais ils n'\xE9taient plus les m\xEAmes qu'il avait \xE9crits. Ils \xE9taient
@@ -316,7 +331,7 @@ PrefabInstance:
     - target: {fileID: 6994123548745125580, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 60
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6994123548745125580, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
