@@ -81,6 +81,11 @@ public class FirstPersonMovement : MonoBehaviour
         {
             SceneManager.LoadScene("HistoireScene");
         }
+        if (collision.collider.tag == "Wall" || collision.collider.tag == "dogo")
+        {
+            this.speed = 1f;
+            this.acceleration = 0f;
+        }
     }
 
     public void Respawn()
