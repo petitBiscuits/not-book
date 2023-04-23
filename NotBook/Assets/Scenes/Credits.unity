@@ -568,10 +568,20 @@ PrefabInstance:
       propertyPath: _sceneName
       value: Tino
       objectReference: {fileID: 0}
+    - target: {fileID: 4850875614052601957, guid: d3de066f83bba1242a3374cf7e86c273,
+        type: 3}
+      propertyPath: timerDuration
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6648295786301486138, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -1522
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994123548745125580, guid: d3de066f83bba1242a3374cf7e86c273,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
