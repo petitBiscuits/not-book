@@ -259,12 +259,12 @@ PrefabInstance:
     - target: {fileID: 6648295786301486138, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -459.9053
+      value: -339.5526
       objectReference: {fileID: 0}
     - target: {fileID: 6648295786301486138, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1019.688
+      value: 1024.75
       objectReference: {fileID: 0}
     - target: {fileID: 6648295786301486138, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
@@ -274,7 +274,7 @@ PrefabInstance:
     - target: {fileID: 6648295786301486138, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6648295786301486138, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
@@ -284,39 +284,21 @@ PrefabInstance:
     - target: {fileID: 6994123548745125580, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
       propertyPath: m_Text
-      value: "La vie de Not :\n\nNot \xE9tait plong\xE9 dans son cahier, \xE9crivant
-        sans rel\xE2che, quand quelque chose de bizarre s'est produit. Il a commenc\xE9
-        \xE0 se sentir aspir\xE9 dans les pages de son livre. Avant qu'il ne puisse
-        comprendre ce qui se passait, Not s'est retrouv\xE9 pi\xE9g\xE9 \xE0 l'int\xE9rieur
-        de son propre livre.\r\n\r\nIl \xE9tait maintenant dans un monde diff\xE9rent,
-        un monde qu'il avait lui-m\xEAme cr\xE9\xE9 dans son livre. Mais quelque
-        chose n'allait pas. Les personnages qu'il avait invent\xE9s avaient pris
-        vie, mais ils n'\xE9taient plus les m\xEAmes qu'il avait \xE9crits. Ils \xE9taient
-        devenus malveillants et semblaient vouloir en finir avec lui.\r\n\r\nNot
-        avait compris qu'il devait sortir de son livre pour sauver sa propre vie.
-        Il a cherch\xE9 une solution pour s'\xE9chapper, mais tout \xE9tait contre
-        lui. Les personnages de son livre l'avaient enferm\xE9 et gard\xE9 en otage.\r\n\r\nNot
-        a commenc\xE9 \xE0 \xE9crire dans son cahier, esp\xE9rant que sa plume serait
-        sa cl\xE9 pour sortir de son propre livre. Il a \xE9crit une nouvelle fin
-        pour l'histoire, o\xF9 il parvenait \xE0 vaincre les personnages mal\xE9fiques
-        et \xE0 retrouver sa libert\xE9.\r\n\r\nL'histoire a pris vie, et les personnages
-        malveillants ont \xE9t\xE9 vaincus. Le monde autour de Not a commenc\xE9
-        \xE0 se dissoudre, et il a \xE9t\xE9 aspir\xE9 de retour dans le monde r\xE9el.
-        Il a atterri sur le sol de sa chambre, le cahier dans ses mains.\r\n\r\nNot
-        \xE9tait soulag\xE9 d'\xEAtre de retour dans le monde r\xE9el, mais il savait
-        maintenant que ses histoires avaient un pouvoir plus grand que ce qu'il avait
-        imagin\xE9. Il avait cr\xE9\xE9 un monde entier dans son livre, et il avait
-        vu de ses propres yeux \xE0 quel point cela pouvait \xEAtre dangereux.\r\n\r\nD\xE9sormais,
-        Not \xE9crivait avec pr\xE9caution, en sachant que ses histoires pouvaient
-        avoir des cons\xE9quences inattendues. Mais il \xE9tait aussi heureux de
-        savoir que ses histoires avaient le pouvoir de transporter ses lecteurs dans
-        des mondes imaginaires extraordinaires."
+      value: "La vie de Not :\n\nNot a toujours ador\xE9 \xE9crire des histoires\r\n\r\nIl
+        aimait se plonger dans ses cahiers, \xE9crire, dessiner, gribouiller ses
+        id\xE9es. \r\n\r\nAu d\xE9but, c'\xE9tait pour lui un moyen d'oublier ses
+        probl\xE8mes,\r\n\r\nMais au fil des pages, Not s'enfermait de plus en plus.\r\n\r\nIl
+        pensait que sa plume serait la cl\xE9 pour \xE9chapper \xE0 son quotidien,\r\n\r\nMais
+        sans s'en rendre compte, il tra\xE7ait les barreaux de sa propre prison\r\n\r\nEt
+        avant qu'il ne comprenne ce qu'il se passe, Not s'est retrouv\xE9 pi\xE9g\xE9
+        \xE0 l'int\xE9rieur de son propre livre.\r\n\r\nMaintenant il veut en sortir
+        mais il ne peut plus..\r\n\r\nAidez Not \xE0 s'\xE9vader de son histoire."
       objectReference: {fileID: 0}
     - target: {fileID: 6994123548745125580, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75,
+      objectReference: {fileID: 12800000, guid: 1062c701058745940ae5dca6219c64c8,
         type: 3}
     - target: {fileID: 6994123548745125580, guid: d3de066f83bba1242a3374cf7e86c273,
         type: 3}
