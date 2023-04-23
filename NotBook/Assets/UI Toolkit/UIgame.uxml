@@ -4,8 +4,10 @@
             <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="lblCountDown" style="position: relative; font-size: 100px; -unity-font-style: bold;" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="ui" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 100%; height: 30%; align-items: stretch; justify-content: flex-end; display: flex; flex-direction: column;">
-        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+    <ui:VisualElement name="ui" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 100%; height: 30%; align-items: stretch; justify-content: space-between; display: flex; flex-direction: column;">
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; align-items: auto; justify-content: flex-start;">
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Assets/Paper/nael.png?fileID=2800000&amp;guid=e2fe9fb526c33f54eabb635d3452c25e&amp;type=3#nael&apos;); -unity-background-scale-mode: scale-to-fit; align-items: center; width: 15%; height: auto; justify-content: flex-start;" />
+        </ui:VisualElement>
         <ui:VisualElement name="Header" style="flex-grow: 0; justify-content: space-around; align-items: center; padding-right: 0; padding-top: 0; margin-top: 0; flex-direction: row; height: 30%; flex-wrap: nowrap; bottom: 0;">
             <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 100%; flex-direction: row; width: 50%;">
                 <ui:VisualElement name="item1" style="width: 20%; background-image: url(&apos;project://database/Assets/Assets/Paper/Post-it%20timer.png?fileID=2800000&amp;guid=df23ae5aee559c34a90df0bbd971053b&amp;type=3#Post-it timer&apos;); -unity-background-scale-mode: scale-to-fit; margin-left: 40px; justify-content: center; align-items: center;">
