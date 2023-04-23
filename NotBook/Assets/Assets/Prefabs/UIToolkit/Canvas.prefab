@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollSpeed: 100
-  timerDuration: 20
+  timerDuration: 15
   _sceneName: 
 --- !u!1 &871562210031891533
 GameObject:

@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 99e68832f21151a46aabd73a8a8a6896
+  - enabled: 1
+    path: Assets/Scenes/Tino.unity
+    guid: 21b410b753cfa6846a6cc367aa592ddf
   m_configObjects: {}

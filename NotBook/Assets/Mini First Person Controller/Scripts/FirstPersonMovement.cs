@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
-
+using UnityEngine.SceneManagement;
 
 public class FirstPersonMovement : MonoBehaviour
 {
@@ -30,7 +30,7 @@ public class FirstPersonMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Get targetMovingSpeed.
-        float targetMovingSpeed = GameController.Instance.isGameStarted ? speed : 0;
+        float targetMovingSpeed = GameController.Instance.isGameStarted ? 0 : speed;
         if (speedOverrides.Count > 0)
         {
             targetMovingSpeed = speedOverrides[speedOverrides.Count - 1]();
@@ -69,5 +69,25 @@ public class FirstPersonMovement : MonoBehaviour
         // Apply movement.
         rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
         EventManager.OnSpeedChange(rigidbody.velocity.magnitude);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "mort")
+        {
+            Respawn();
+        }
+        if (collision.collider.tag == "end")
+        {
+            SceneManager.LoadScene("HistoireScene");
+        }
+    }
+
+    public void Respawn()
+    {
+        this.transform.position = GameController.Instance.spawnpoint.transform.position;
+        this.speed = 0f;
+        this.acceleration = 0f;
+        Timer.Instance.Restart();
     }
 }

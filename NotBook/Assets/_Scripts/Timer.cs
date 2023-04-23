@@ -42,13 +42,25 @@ public class Timer : MonoBehaviour
         }
     }
 
+    public void Restart()
+    {
+        this.StartTimer = false;
+        GameController.Instance.EnGame();
+        countdownTime = 3;
+        currentTime = 0f;
+        EventManager.OnTimerChange(currentTime.ToString("0.0"));
+        StartCoroutine(CountdownToStart());
+    }
+
     IEnumerator CountdownToStart()
     {
-        while(countdownTime > 0)
+        while (countdownTime > 0)
         {
+            EventManager.OnCountDown(countdownTime);
             yield return new WaitForSeconds(1f);
             countdownTime--;
         }
+        EventManager.OnCountDown(countdownTime);
 
         // GO !
         this.StartTimer = true;

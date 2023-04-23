@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public static GameController Instance;
-    public Timer timer;
+
+    public GameObject spawnpoint;
 
     public bool isGameStarted = false;
 
@@ -19,6 +20,7 @@ public class GameController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update
@@ -30,6 +32,11 @@ public class GameController : MonoBehaviour
     public void StartGame()
     {
         isGameStarted = true;
+    }
+
+    public void EnGame()
+    {
+        isGameStarted = false;
     }
 
     // Update is called once per frame
